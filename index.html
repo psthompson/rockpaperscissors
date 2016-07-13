@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Rock, Paper Scissors</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Rock, Paper, Scissors</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="results">
+						<div class="col-md-4 col-md-offset-4">
+							<button id="winner" class="btn btn-success btn-block"></button>
+						</div>
+						<div class="col-md-4 col-md-offset-4">
+							<button id="tie" class="btn btn-info btn-block"></button>
+						</div>
+						<div class="col-md-4 col-md-offset-4">
+							<button id="loser" class="btn btn-danger btn-block"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th class="col-md-2"></th>
+								<th class="col-md-5 text-center">You</th>
+								<th class="col-md-5 text-center">Computer</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row" class="col-md-2">Wins: </td>
+									<td id="user-wins" class="col-md-3 text-center"></td>
+									<td id="computer-wins" class="col-md-3 text-center"></td>
+							</tr>
+							<tr>
+								<th scope="row" class="row-label col-md-2">Losses: </td>
+									<td id="user-losses" class="col-md-3 text-center"></td>
+									<td id="computer-losses" class="col-md-3 text-center"></td>
+							</tr>
+							<tr>
+								<th scope="row" class="row-label col-md-2">Ties: </td>
+									<td id="user-ties" class="col-md-3 text-center"></td>
+									<td id="computer-ties" class="col-md-3 text-center"></td>
+							</tr>
+							<tr class="active">
+								<th scope="row" class="row-label col-md-2">Total Plays:</td>
+									<td colspan="2" id="total-plays" class="col-md-3 text-center"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4">
+					<button onClick="window.location.reload()"class="btn btn-warning btn-block">Clear Results</button>
+				</div>
+			</div>
+
+			<script type="text/javascript" src="script.js"></script>
+	</body>
+
+</html>
